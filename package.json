@@ -1,0 +1,19 @@
+{
+  "name": "exercicio-typescript-3dsi3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios.git"
+  },
+  "author": "Jonatas Arão de Carvalho Neves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios/issues"
+  },
+  "homepage": "https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios#readme"
+}
