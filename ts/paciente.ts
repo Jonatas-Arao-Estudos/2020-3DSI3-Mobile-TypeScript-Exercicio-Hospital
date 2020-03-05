@@ -1,6 +1,6 @@
 namespace hospital{
     export class Paciente extends Pessoa{
-        //Atributos
+        //Atributo
         private codPaciente : number | undefined;
 
         //Getter
