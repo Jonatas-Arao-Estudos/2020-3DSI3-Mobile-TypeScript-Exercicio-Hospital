@@ -1,9 +1,11 @@
 namespace hospital{
     //Instanciando Hospital
+    
     let hospital = new Hospital;
     hospital.setNome('Seito University Hospital');
 
     //Instanciando Médicos
+
     let medicos = new Array<Medico>();
     for(let i = 0 ; i < 3 ; i++){
         medicos[i] = new Medico;
@@ -27,11 +29,8 @@ namespace hospital{
     medicos[2].setCrm(4510);
     medicos[2].setEspecialidade('Radiologista e CR');
 
-    medicos.forEach( medico => {
-        hospital.addMedico(medico);
-    });
-
     //Instanciando Enfermeiros
+
     let enfermeiros = new Array<Enfermeiro>();
     for(let i = 0 ; i < 3 ; i++){
         enfermeiros[i] = new Enfermeiro;
@@ -52,11 +51,8 @@ namespace hospital{
     enfermeiros[2].setCodFuncionario(1803);
     enfermeiros[2].setCoren(4530);
 
-    enfermeiros.forEach( enfermeiro => {
-        hospital.addEnfermeiro(enfermeiro);
-    });
-
     //Instanciando Pacientes
+
     let pacientes = new Array<Paciente>();
     for(let i = 0 ; i < 3 ; i++){
         pacientes[i] = new Paciente;
@@ -74,9 +70,18 @@ namespace hospital{
     pacientes[2].setCPF('20150100017');
     pacientes[2].setCodPaciente(5013);
 
+    //Adicionando os objetos na classe Hospital
+
+    medicos.forEach( medico => {
+        hospital.addMedico(medico);
+    });
+
+    enfermeiros.forEach( enfermeiro => {
+        hospital.addEnfermeiro(enfermeiro);
+    });
+
+    
     pacientes.forEach( paciente => {
         hospital.addPaciente(paciente);
     });
-
-    //Adicionando os objetos na classe Hospital
 }
