@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios/issues"
   },
-  "homepage": "https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios#readme"
+  "homepage": "https://github.com/Jonatas-Arao-Estudos/2020-3DSI3-Mobile-TypeScript-Exercicios#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
