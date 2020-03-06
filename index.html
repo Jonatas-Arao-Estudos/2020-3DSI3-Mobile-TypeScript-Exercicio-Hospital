@@ -1,12 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercício - Hospital</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <a class="navbar-brand" href="#"><h1 id="nomeHospital">Hospital</h1></a>
+        <span class="navbar-text ml-auto">
+        Atividade Hospital - Aplicativos Mobile II
+        </span>
+    </nav>
+
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-12 mt-1">
+                <h1 class="text-center">Médicos</h1>
+                <table class="table table-striped shadow rounded">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cod.:</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">CRM</th>
+                            <th scope="col">Especialidade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaMedicos">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mt-3">
+                <h1 class="text-center">Enfermeiros</h1>
+                <table class="table table-striped shadow rounded">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cod.:</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Coren</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaEnfermeiros">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mt-3">
+                <h1 class="text-center">Pacientes</h1>
+                <table class="table table-striped shadow rounded">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cod.:</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaPacientes">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <script src="js/classes/pessoa.js"></script>
     <script src="js/classes/paciente.js"></script>
     <script src="js/classes/funcionario.js"></script>
@@ -15,4 +94,5 @@
     <script src="js/classes/hospital.js"></script>
     <script src="js/implementa.js"></script>
 </body>
+
 </html>
