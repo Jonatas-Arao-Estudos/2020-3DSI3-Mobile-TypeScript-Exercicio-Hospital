@@ -55,4 +55,28 @@ namespace hospital{
     enfermeiros.forEach( enfermeiro => {
         hospital.addEnfermeiro(enfermeiro);
     });
+
+    //Instanciando Pacientes
+    let pacientes = new Array<Paciente>();
+    for(let i = 0 ; i < 3 ; i++){
+        pacientes[i] = new Paciente;
+    }
+
+    pacientes[0].setNome('Saki Momose');
+    pacientes[0].setCPF('20160010018');
+    pacientes[0].setCodPaciente(111);
+
+    pacientes[1].setNome('Nico Saiba');
+    pacientes[1].setCPF('20160800018');
+    pacientes[1].setCodPaciente(3614);
+
+    pacientes[2].setNome('Takeru Tenkuji');
+    pacientes[2].setCPF('20150100017');
+    pacientes[2].setCodPaciente(5013);
+
+    pacientes.forEach( paciente => {
+        hospital.addPaciente(paciente);
+    });
+
+    //Adicionando os objetos na classe Hospital
 }
