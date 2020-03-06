@@ -84,4 +84,48 @@ namespace hospital{
     pacientes.forEach( paciente => {
         hospital.addPaciente(paciente);
     });
+
+    //Mostrando Dados do Hospital em "index.html"
+    
+    let nomeHospital = document.getElementById('nomeHospital');
+    nomeHospital.textContent = hospital.getNome();
+
+    let tabelaMedicos = document.getElementById('tabelaMedicos');
+    hospital.getMedicos().forEach( medico => {
+        let html = `
+        <tr>
+            <th scope="row">${medico.getCodFuncionario()}</th>
+            <td>${medico.getNome()}</td>
+            <td>${medico.getCPF()}</td>
+            <td>${medico.getCrm()}</td>
+            <td>${medico.getEspecialidade()}</td>
+        </tr>
+        `;
+        tabelaMedicos.innerHTML += html;
+    });
+
+    let tabelaEnfermeiros = document.getElementById('tabelaEnfermeiros');
+        hospital.getEnfermeiros().forEach( enfermeiros => {
+        let html = `
+        <tr>
+            <th scope="row">${enfermeiros.getCodFuncionario()}</th>
+            <td>${enfermeiros.getNome()}</td>
+            <td>${enfermeiros.getCPF()}</td>
+            <td>${enfermeiros.getCoren()}</td>
+        </tr>
+        `;
+        tabelaEnfermeiros.innerHTML += html;
+    });
+
+    let tabelaPacientes = document.getElementById('tabelaPacientes');
+        hospital.getPacientes().forEach( pacientes => {
+        let html = `
+        <tr>
+            <th scope="row">${pacientes.getCodPaciente()}</th>
+            <td>${pacientes.getNome()}</td>
+            <td>${pacientes.getCPF()}</td>
+        </tr>
+        `;
+        tabelaPacientes.innerHTML += html;
+    });
 }
